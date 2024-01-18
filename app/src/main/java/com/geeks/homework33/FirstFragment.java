@@ -30,7 +30,7 @@ public class FirstFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvFlower = requireActivity().findViewById(R.id.tv_flower);
+        rvFlower = requireActivity().findViewById(R.id.flowers);
         loadData();
         FlowersAdapter adapter = new FlowersAdapter(flowerList);
         rvFlower.setAdapter(adapter);
